@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SlotData" load_steps=2 format=3 uid="uid://dllao1n1u4o50"]
+
+[ext_resource type="Script" path="res://data/slot_data.gd" id="1_cut61"]
+
+[resource]
+script = ExtResource("1_cut61")
+size = 0
+type = 1

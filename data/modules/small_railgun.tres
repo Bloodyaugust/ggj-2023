@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ModuleData" load_steps=4 format=3 uid="uid://cxfgqt6h05tvi"]
+
+[ext_resource type="Script" path="res://data/module_data.gd" id="1_k3hfi"]
+[ext_resource type="Resource" uid="uid://tlk17k16yhnk" path="res://data/projectiles/railgun_slug.tres" id="1_l1rip"]
+[ext_resource type="Texture2D" uid="uid://4typrc2p2rra" path="res://icon.png" id="2_111vm"]
+
+[resource]
+script = ExtResource("1_k3hfi")
+cost = 1.0
+name = "Small Railgun"
+power_drain = 0.0
+size = 0
+sprite = ExtResource("2_111vm")
+type = 3
+armor = 0.0
+battery = 0.0
+power_generated = 0.0
+shield_capacity = 0.0
+shield_recharge = 0.0
+burst = 1
+clip_size = 3
+cooldown_time = 0.25
+projectile = ExtResource("1_l1rip")
+reload_time = 0.7

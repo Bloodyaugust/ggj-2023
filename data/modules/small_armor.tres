@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ModuleData" load_steps=2 format=3 uid="uid://bu0pshwx3xbrt"]
+
+[ext_resource type="Script" path="res://data/module_data.gd" id="1_7qhe0"]
+
+[resource]
+script = ExtResource("1_7qhe0")
+cost = 1.0
+name = "Small Armor Plate"
+power_drain = 0.0
+size = 0
+type = 0
+armor = 1.0
+battery = 0.0
+power_generated = 0.0
+shield_capacity = 0.0
+shield_recharge = 0.0
+burst = 0
+clip_size = 0
+cooldown_time = 0
+reload_time = 0

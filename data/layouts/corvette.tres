@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ShipLayoutData" load_steps=2 format=3 uid="uid://b1fhaxxe6htga"]
+
+[ext_resource type="Script" path="res://data/ship_layout_data.gd" id="1_rvawv"]
+
+[resource]
+script = ExtResource("1_rvawv")
+armor = 1.0
+battery = 5.0
+cost = 0.0
+hull = 10.0
+power = 1.0
+shield_capacity = 3.0
+shield_recharge = 1.0
+slots = {}
+name = "Corvette"
