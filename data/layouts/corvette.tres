@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ShipLayoutData" load_steps=3 format=3 uid="uid://b1fhaxxe6htga"]
 
 [ext_resource type="Script" path="res://data/ship_layout_data.gd" id="1_rvawv"]
-[ext_resource type="Texture2D" uid="uid://4typrc2p2rra" path="res://icon.png" id="2_434ea"]
+[ext_resource type="Texture2D" uid="uid://mqlo3n6xsm3j" path="res://sprites/ships/dwarf-corvette/corvette-1.png" id="2_o246o"]
 
 [resource]
 script = ExtResource("1_rvawv")
@@ -13,6 +13,6 @@ power = 1.0
 shield_capacity = 3.0
 shield_recharge = 1.0
 slots = {}
-sprite = ExtResource("2_434ea")
+sprite = ExtResource("2_o246o")
 thrust = 50.0
 name = "Corvette"

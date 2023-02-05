@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://actors/Ship.gd" id="1_g0n5c"]
 [ext_resource type="Resource" uid="uid://b2us6jhikgf60" path="res://data/ships/basic_corvette.tres" id="2_7i72x"]
-[ext_resource type="Texture2D" uid="uid://4typrc2p2rra" path="res://icon.png" id="2_yau7f"]
+[ext_resource type="Texture2D" uid="uid://b7ajbgpl5hl4k" path="res://sprites/ships/plant-corvette/plant-corvette-1.png" id="3_sqx8g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_avks4"]
 
@@ -13,7 +13,8 @@ team = "enemies"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 unique_name_in_owner = true
-texture = ExtResource("2_yau7f")
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_sqx8g")
 
 [node name="Modules" type="Node2D" parent="."]
 unique_name_in_owner = true

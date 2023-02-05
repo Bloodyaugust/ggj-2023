@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ShipLayoutData" load_steps=3 format=3 uid="uid://crrie24s648xq"]
+
+[ext_resource type="Script" path="res://data/ship_layout_data.gd" id="1_03tli"]
+[ext_resource type="Texture2D" uid="uid://b7ajbgpl5hl4k" path="res://sprites/ships/plant-corvette/plant-corvette-1.png" id="2_s52sm"]
+
+[resource]
+script = ExtResource("1_03tli")
+armor = 1.0
+battery = 5.0
+cost = 0.0
+hull = 2.0
+power = 1.0
+shield_capacity = 1.0
+shield_recharge = 1.0
+slots = {}
+sprite = ExtResource("2_s52sm")
+thrust = 50.0
+name = "Corvette"
