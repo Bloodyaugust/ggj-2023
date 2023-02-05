@@ -10,4 +10,5 @@ class_name ShipLayoutData
 @export var shield_recharge: float
 @export var slots: Dictionary
 @export var sprite: Texture2D
+@export var thrust: float
 @export var name: String

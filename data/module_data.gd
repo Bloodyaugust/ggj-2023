@@ -14,7 +14,9 @@ class_name ModuleData
 @export var power_generated: float
 @export var shield_capacity: float
 @export var shield_recharge: float
+@export var thrust: float
 @export_group("Weapon")
+@export var attack_range: float
 @export var burst: int
 @export var clip_size: int
 @export var cooldown_time: float

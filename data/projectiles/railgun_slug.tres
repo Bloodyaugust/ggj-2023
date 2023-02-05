@@ -9,4 +9,6 @@ damage_amount = 1.0
 damage_type = 0
 homing = false
 name = "Slug"
+speed = 300.0
 sprite = ExtResource("2_meurs")
+time_to_live = 5.0

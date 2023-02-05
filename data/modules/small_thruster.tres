@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ModuleData" load_steps=3 format=3 uid="uid://dt0ejkppdyye3"]
+
+[ext_resource type="Script" path="res://data/module_data.gd" id="1_lsojh"]
+[ext_resource type="Texture2D" uid="uid://4typrc2p2rra" path="res://icon.png" id="2_iw5rm"]
+
+[resource]
+script = ExtResource("1_lsojh")
+cost = 1.0
+name = "Small Thruster"
+power_drain = 1.0
+size = 0
+sprite = ExtResource("2_iw5rm")
+type = 2
+armor = 0.0
+battery = 0.0
+power_generated = 0.0
+shield_capacity = 0.0
+shield_recharge = 0.0
+thrust = 50.0
+burst = 0
+clip_size = 0
+cooldown_time = 0.0
+reload_time = 0.0

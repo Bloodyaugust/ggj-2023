@@ -1,10 +1,8 @@
-extends Sprite2D
+extends Node2D
 
-@export var data: PlayerData
+@onready var _ship: Ship = $"./Ship"
 
-func _process(delta):
-  var _movement_input: Vector2 = Vector2(Input.get_axis("move_left", "move_right"), Input.get_axis("move_up", "move_down")).normalized()
+func _physics_process(_delta: float) -> void:
+  var _move_direction: Vector2 = Vector2(Input.get_axis("move_left", "move_right"), Input.get_axis("move_up", "move_down"))
 
-  var _movement: Vector2 = _movement_input * delta * data.move_speed
-
-  global_position = global_position + _movement
+  _ship.move(_move_direction)
