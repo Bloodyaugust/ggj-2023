@@ -1,11 +1,10 @@
-[gd_resource type="Resource" script_class="ShipData" load_steps=5 format=3 uid="uid://cl3067l8lgkjv"]
+[gd_resource type="Resource" script_class="ShipData" load_steps=4 format=3 uid="uid://cl3067l8lgkjv"]
 
-[ext_resource type="Resource" uid="uid://dt0ejkppdyye3" path="res://data/modules/small_thruster.tres" id="1_mmva8"]
-[ext_resource type="Resource" uid="uid://cxfgqt6h05tvi" path="res://data/modules/small_railgun.tres" id="2_o0cgf"]
+[ext_resource type="Resource" uid="uid://ds5oxrl6qi6n4" path="res://data/modules/small_plant_gun.tres" id="2_puwda"]
 [ext_resource type="Script" path="res://data/ship_data.gd" id="3_3qcyq"]
 [ext_resource type="Resource" uid="uid://crrie24s648xq" path="res://data/layouts/plant_corvette.tres" id="4_l4fql"]
 
 [resource]
 script = ExtResource("3_3qcyq")
 ship_class = ExtResource("4_l4fql")
-modules = Array[Resource("res://data/module_data.gd")]([ExtResource("1_mmva8"), ExtResource("2_o0cgf")])
+modules = Array[Resource("res://data/module_data.gd")]([ExtResource("2_puwda")])

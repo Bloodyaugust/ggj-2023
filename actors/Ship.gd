@@ -59,10 +59,10 @@ func _update_modules() -> void:
       GameConstants.SLOT_TYPES.WEAPON:
         var _new_weapon: Weapon = WEAPON_SCENE.instantiate()
         
-        _new_weapon.global_position = global_position
         _new_weapon.parent = self
         _new_weapon.data = _module
         _modules.add_child(_new_weapon)
+        _new_weapon.global_position = global_position
 
 func _physics_process(delta: float) -> void:
   if _move_direction.length() > 0:

@@ -15,6 +15,7 @@ power_generated = 0.0
 shield_capacity = 0.0
 shield_recharge = 0.0
 thrust = 0.0
+attack_range = 0.0
 burst = 0
 clip_size = 0
 cooldown_time = 0.0

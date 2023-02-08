@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bfjaqu2i4i63i"]
+[gd_scene load_steps=17 format=3 uid="uid://bfjaqu2i4i63i"]
 
 [ext_resource type="Script" path="res://views/FPS.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://b2qppaqwqvjg3" path="res://actors/Player.tscn" id="1_4pt6e"]
@@ -7,10 +7,9 @@
 [ext_resource type="Script" path="res://views/MainMenu.gd" id="4"]
 [ext_resource type="PackedScene" path="res://lib/BetterCam.tscn" id="5"]
 [ext_resource type="Script" path="res://views/Splash.gd" id="6"]
-[ext_resource type="PackedScene" uid="uid://bm73ssfwxo80r" path="res://actors/Ship.tscn" id="7_4pao0"]
-[ext_resource type="Resource" uid="uid://cl3067l8lgkjv" path="res://data/ships/plant_corvette.tres" id="8_5qllu"]
 [ext_resource type="Texture2D" uid="uid://djgvecxs2qrcl" path="res://sprites/background.png" id="10_i33rc"]
 [ext_resource type="Texture2D" uid="uid://5ccn6epl6ppq" path="res://sprites/foreground.png" id="11_3k3fg"]
+[ext_resource type="Script" path="res://scripts/controllers/SpawnController.gd" id="11_jxpce"]
 [ext_resource type="Texture2D" uid="uid://cibr88vkm40pi" path="res://sprites/star-forge.png" id="11_o1n54"]
 
 [sub_resource type="Animation" id="Animation_baga0"]
@@ -194,9 +193,6 @@ key_movement = false
 mouse_drag = false
 zoom_max = 1.0
 
-[node name="Ship" parent="." instance=ExtResource("7_4pao0")]
-data = ExtResource("8_5qllu")
-
 [node name="Player" parent="." instance=ExtResource("1_4pt6e")]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -224,3 +220,9 @@ motion_offset = Vector2(1520, 680)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("11_o1n54")
 centered = false
+
+[node name="SpawnController" type="Node2D" parent="."]
+script = ExtResource("11_jxpce")
+max_spawn_distance = 800.0
+min_spawn_distance = 300.0
+spawn_interval = 2.0

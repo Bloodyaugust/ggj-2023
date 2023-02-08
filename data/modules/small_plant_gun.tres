@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ModuleData" load_steps=4 format=3 uid="uid://ds5oxrl6qi6n4"]
+
+[ext_resource type="Resource" uid="uid://dvwfscdfyvqb3" path="res://data/projectiles/plant_projectile.tres" id="1_fkxle"]
+[ext_resource type="Script" path="res://data/module_data.gd" id="2_nidkh"]
+[ext_resource type="Texture2D" uid="uid://4typrc2p2rra" path="res://icon.png" id="3_gnoy1"]
+
+[resource]
+script = ExtResource("2_nidkh")
+cost = 1.0
+name = "Small Plant Gun"
+power_drain = 0.0
+size = 0
+sprite = ExtResource("3_gnoy1")
+type = 3
+armor = 0.0
+battery = 0.0
+power_generated = 0.0
+shield_capacity = 0.0
+shield_recharge = 0.0
+thrust = 0.0
+attack_range = 250.0
+burst = 1
+clip_size = 2
+cooldown_time = 0.5
+projectile = ExtResource("1_fkxle")
+reload_time = 1.5

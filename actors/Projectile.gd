@@ -5,6 +5,7 @@ var data: ProjectileData
 var team: String
 
 @onready var _area2d = %Area2D
+@onready var _sprite: Sprite2D = %Sprite2D
 @onready var _time_to_live = data.time_to_live
 
 func _on_area2d_entered(entering_area: Area2D) -> void:
@@ -33,3 +34,5 @@ func _process(delta: float) -> void:
 
 func _ready() -> void:
   _area2d.connect("area_entered", _on_area2d_entered)
+
+  _sprite.texture = data.sprite

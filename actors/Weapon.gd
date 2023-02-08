@@ -22,11 +22,12 @@ func _get_target() -> void:
   for _node in _possible_targets:
     var _possible_target: Ship = _node
 
-    if GDUtil.reference_safe(_possible_target) && _possible_target._hull >= 0.0 && _possible_target.global_position.distance_to(global_position) <= data.attack_range:
+    if GDUtil.reference_safe(_possible_target) && _possible_target.global_position.distance_to(global_position) <= data.attack_range:
       _target = _possible_target
       break
 
 func _fire() -> void:
+  print(parent.team + ": firing")
   _clip -= data.burst
   _cooldown = data.cooldown_time
   if _clip <= 0:
@@ -42,6 +43,9 @@ func _fire() -> void:
     $"/root".add_child(_new_projectile)
 
 func _process(delta: float) -> void:
+  if !GDUtil.reference_safe(_target):
+    _get_target()
+  
   _cooldown = clampf(_cooldown - delta, 0.0, data.cooldown_time)
 
   if _clip <= 0:
@@ -51,9 +55,6 @@ func _process(delta: float) -> void:
       _clip = data.clip_size
 
   if _clip > 0 && _cooldown <= 0.0:
-    if !GDUtil.reference_safe(_target):
-      _get_target()
-
     if GDUtil.reference_safe(_target):
       _fire()
 

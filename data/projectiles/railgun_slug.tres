@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ProjectileData" load_steps=3 format=3 uid="uid://tlk17k16yhnk"]
 
 [ext_resource type="Script" path="res://data/projectile_data.gd" id="1_nwj1g"]
-[ext_resource type="Texture2D" uid="uid://4typrc2p2rra" path="res://icon.png" id="2_meurs"]
+[ext_resource type="Texture2D" uid="uid://cr3u0ts16iqfn" path="res://sprites/railgun-projectile.png" id="2_112lp"]
 
 [resource]
 script = ExtResource("1_nwj1g")
@@ -10,5 +10,5 @@ damage_type = 0
 homing = false
 name = "Slug"
 speed = 300.0
-sprite = ExtResource("2_meurs")
+sprite = ExtResource("2_112lp")
 time_to_live = 5.0

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ProjectileData" load_steps=3 format=3 uid="uid://dvwfscdfyvqb3"]
+
+[ext_resource type="Script" path="res://data/projectile_data.gd" id="1_j8cgs"]
+[ext_resource type="Texture2D" uid="uid://b6sfbjfv7ol8u" path="res://sprites/plant-projectile.png" id="2_pau8i"]
+
+[resource]
+script = ExtResource("1_j8cgs")
+damage_amount = 1.0
+damage_type = 0
+homing = false
+name = "Leaf"
+speed = 300.0
+sprite = ExtResource("2_pau8i")
+time_to_live = 5.0
