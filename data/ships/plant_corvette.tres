@@ -8,3 +8,4 @@
 script = ExtResource("3_3qcyq")
 ship_class = ExtResource("4_l4fql")
 modules = Array[Resource("res://data/module_data.gd")]([ExtResource("2_puwda")])
+name = "Plant Corvette"

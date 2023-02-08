@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://bfjaqu2i4i63i"]
+[gd_scene load_steps=18 format=3 uid="uid://bfjaqu2i4i63i"]
 
 [ext_resource type="Script" path="res://views/FPS.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://b2qppaqwqvjg3" path="res://actors/Player.tscn" id="1_4pt6e"]
 [ext_resource type="Texture2D" uid="uid://4typrc2p2rra" path="res://icon.png" id="2"]
 [ext_resource type="Theme" uid="uid://co811ue55i33m" path="res://resources/base_theme.tres" id="2_1ffbx"]
+[ext_resource type="Script" path="res://views/ShipDesigner.gd" id="3_3sc3y"]
 [ext_resource type="Script" path="res://views/MainMenu.gd" id="4"]
 [ext_resource type="PackedScene" path="res://lib/BetterCam.tscn" id="5"]
 [ext_resource type="Script" path="res://views/Splash.gd" id="6"]
@@ -151,7 +152,56 @@ libraries = {
 "": SubResource("AnimationLibrary_dnxrp")
 }
 
+[node name="ShipDesigner" type="MarginContainer" parent="UIRoot"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_3sc3y")
+
+[node name="PanelContainer" type="PanelContainer" parent="UIRoot/ShipDesigner"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UIRoot/ShipDesigner/PanelContainer"]
+layout_mode = 2
+
+[node name="ShipAndLayoutSelector" type="PanelContainer" parent="UIRoot/ShipDesigner/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="ShipsLayouts" type="Tree" parent="UIRoot/ShipDesigner/PanelContainer/HBoxContainer/ShipAndLayoutSelector"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ModuleList" type="PanelContainer" parent="UIRoot/ShipDesigner/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UIRoot/ShipDesigner/PanelContainer/HBoxContainer/ModuleList"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UIRoot/ShipDesigner/PanelContainer/HBoxContainer/ModuleList/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Modules" type="VBoxContainer" parent="UIRoot/ShipDesigner/PanelContainer/HBoxContainer/ModuleList/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="SelectedModule" type="PanelContainer" parent="UIRoot/ShipDesigner/PanelContainer/HBoxContainer/ModuleList/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+
+[node name="ShipPreview" type="PanelContainer" parent="UIRoot/ShipDesigner/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="FPS" type="MarginContainer" parent="UIRoot"]
+visible = false
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 

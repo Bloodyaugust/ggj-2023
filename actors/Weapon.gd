@@ -27,7 +27,6 @@ func _get_target() -> void:
       break
 
 func _fire() -> void:
-  print(parent.team + ": firing")
   _clip -= data.burst
   _cooldown = data.cooldown_time
   if _clip <= 0:

@@ -9,3 +9,4 @@
 script = ExtResource("1_kfjs8")
 ship_class = ExtResource("4_ibe2j")
 modules = Array[Resource("res://data/module_data.gd")]([ExtResource("1_8cbaq"), ExtResource("2_byhab")])
+name = "Basic Corvette"

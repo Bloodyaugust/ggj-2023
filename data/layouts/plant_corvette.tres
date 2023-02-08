@@ -15,4 +15,4 @@ shield_recharge = 0.25
 slots = {}
 sprite = ExtResource("2_s52sm")
 thrust = 50.0
-name = "Corvette"
+name = "Plant Corvette"
